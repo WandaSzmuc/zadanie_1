@@ -1,11 +1,101 @@
-.header-main-container {
-  display: flex;
+:root {
+  --main-text-color: rgb(30, 32, 161);
+  --span-color: rgb(94, 25, 204);
+  --accent-color: orange;
 }
 
+.header-main-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  font-family: "Open Sans", sans-serif;
+  color: var(--main-text-color);
+}
+.bold {
+  font-weight: 600;
+}
+
+/* All styles for Welcome container */
 .welcome-container {
   width: 50%;
+  padding-right: 50px;
 }
+
+span {
+  color: var(--span-color);
+}
+.welcome-container-button {
+  display: inline-block;
+  color: white;
+  background-color: var(--accent-color);
+  text-decoration: none;
+  margin-top: 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+.welcome-container p:first-child {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.welcome-container-heading {
+  font-size: 35px;
+  line-height: 45px;
+  margin-bottom: 20px;
+}
+
+.welcome-container-description {
+  line-height: 25px;
+}
+/* All styles for articles section */
 .articles {
   width: 50%;
   display: flex;
+}
+.articles-containers {
+  min-height: 550px;
+}
+.second-articles-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.article {
+  margin: 0 20px 20px 0;
+  padding: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  box-shadow: 0 0 4px rgba(128, 128, 128, 0.2);
+  border-radius: 5px;
+}
+.article h1 {
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+.article p {
+  font-size: 12px;
+  line-height: 15px;
+}
+.article .fas {
+  margin-bottom: 15px;
+  padding: 10px 12px;
+  border-radius: 5px;
+}
+
+.blue {
+  background-color: rgb(139, 198, 247);
+  color: rgb(52, 89, 212);
+}
+.yellow {
+  background-color: rgb(255, 255, 176);
+  color: var(--accent-color);
+}
+.green {
+  background-color: rgb(176, 219, 163);
+  color: rgb(6, 155, 6);
+}
+.purple {
+  background-color: rgb(213, 172, 214);
+  color: rgb(159, 0, 190);
 }
