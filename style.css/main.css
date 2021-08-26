@@ -2,6 +2,10 @@
   --main-text-color: rgb(50, 28, 148);
   --span-color: rgb(75, 46, 243);
   --accent-color: orange;
+  --background-elements: linear-gradient(
+    rgb(144, 121, 165, 0.15) 0%,
+    rgb(233, 227, 243) 100%
+  );
 }
 
 .header-main-container {
@@ -14,11 +18,6 @@
   color: var(--main-text-color);
   background-color: rgb(233, 227, 243);
 }
-.header-main-container
-}
-.bold {
-  font-weight: 500;
-}
 
 /* All styles for Welcome container */
 .welcome-container {
@@ -29,19 +28,18 @@
 }
 
 .welcome-container::before {
-    content: "";
-    position: absolute;
-    height: 400px;
-    width: 550px;
-    /* background-color: rgb(144, 121, 165,0.12); */
-    background: linear-gradient(rgb(144, 121, 165,0.15) 0%, rgb(233, 227, 243) 100%);
-    border-top-left-radius: 90%;
-    z-index: 1;
-  }
-  .welcome-container-element{
-    z-index: 2;
-    position: relative;
-  }
+  content: "";
+  position: absolute;
+  height: 400px;
+  width: 550px;
+  background: var(--background-elements);
+  border-top-left-radius: 90%;
+  z-index: 1;
+}
+.welcome-container-element {
+  z-index: 2;
+  position: relative;
+}
 span {
   color: var(--span-color);
 }
@@ -63,6 +61,7 @@ span {
   font-size: 35px;
   line-height: 45px;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .welcome-container-description {
@@ -73,6 +72,20 @@ span {
   width: 50%;
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: auto;
+}
+.articles::before {
+  margin-top: 170px;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 200px solid rgb(144, 121, 165, 0.1);
+  border-left: 200px solid transparent;
+  /* border-radius: 10px; */
+  z-index: 1;
+  background: ;
 }
 .articles-containers {
   min-height: 600px;
@@ -83,6 +96,8 @@ span {
   justify-content: center;
 }
 .article {
+  z-index: 2;
+  position: relative;
   width: 200px;
   height: 200px;
   margin: 0 20px 20px 0;
@@ -95,6 +110,7 @@ span {
 .article h1 {
   line-height: 25px;
   margin-bottom: 10px;
+  font-weight: 700;
 }
 .article p {
   font-size: 12px;
