@@ -31,10 +31,10 @@
 .welcome-container::before {
     content: "";
     position: absolute;
-    height: 450px;
-    width: 400px;
+    height: 400px;
+    width: 550px;
     /* background-color: rgb(144, 121, 165,0.12); */
-    background: linear-gradient(rgb(144, 121, 165,0.17) 0%, rgb(233, 227, 243) 100%);
+    background: linear-gradient(rgb(144, 121, 165,0.15) 0%, rgb(233, 227, 243) 100%);
     border-top-left-radius: 90%;
     z-index: 1;
   }
