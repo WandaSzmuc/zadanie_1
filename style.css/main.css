@@ -30,6 +30,7 @@
 .welcome-container::before {
   content: "";
   position: absolute;
+  margin-top: 70px;
   height: 400px;
   width: 550px;
   background: var(--background-elements);
